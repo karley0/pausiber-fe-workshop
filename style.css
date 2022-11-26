@@ -110,9 +110,65 @@ main .main-cotainer .main-infos-content .button-content button{
 
 main .main-cotainer .main-infos-content .button-content button:hover{
     box-shadow: -4px -4px 0px 0px #eb7711bf;
+    animation: shake .3s infinite linear;
 }
 
 main .main-cotainer .main-image{
     width: 500px;
 }
 
+.social-container{
+    position: absolute;
+    right: 45px;
+    top: 40%;
+}
+
+.social-container a .social-item{
+    font-size: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.social-container a .social-item.instagram:hover{
+    background-color: #E4405F;
+    color: #fff;
+}
+.social-container a .social-item.twitter:hover{
+    background-color: #1DA1F2;
+    color: #fff;
+}
+.social-container a .social-item.youtube:hover{
+    background-color: #171515;
+    color: #fff;
+}
+.social-container a .social-item.facebook:hover{
+    background-color: #CD201F;
+    color: #fff;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    25%{
+        transform: rotate(10deg);
+    }
+
+    50%{
+        transform: rotate(0deg);
+    }
+
+    75%{
+        transform: rotate(-10deg);
+    }
+
+    100%{
+        transform: rotate(0deg);
+    }
+}
